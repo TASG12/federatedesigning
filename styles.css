@@ -1,0 +1,138 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(https://i.ibb.co/rKjswdK/federate-bg.png);
+    color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #94a3b8;
+    margin-top: 1rem;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    transform: scale(1.03);
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    background-color: #e0e0e0;
+    color: #0075ff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #d6e8ff;
+    transform: scale(1.05);
+}
+
+#result {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    animation: fadeInResult 0.5s ease-in-out forwards;
+}
+
+img {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    font-size: 0.9rem;
+    color: #1e293b;
+    margin-top: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInResult {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
