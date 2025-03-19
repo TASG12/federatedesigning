@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+const robloxworker = process.env.ROBLOXWORKER_URL;
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
   const input = document.querySelector("input");
@@ -16,9 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `https://roblox-api.tobygoodman2012.workers.dev?username=${encodeURIComponent(
-          username
-        )}`
+        ROBLOXWORKER_URL + `?username=${encodeURIComponent(username)}`
       );
       const data = await response.json();
 
